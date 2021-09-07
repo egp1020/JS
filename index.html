@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <script>
+        // Async
+        window.addEventListener('load', async function(){
+            const result = await fetch('https://pokeapi.co/api/v2/pokemon');
+            //fetch('https://pokeapi.co/api/v2/pokemon').then(result=>{return result.json()}).then(data=>{});
+            // Como el resultado es una lista de json, tenemos que convertirlo
+            const data = await result.json();
+
+            setTimeout(()=>{
+                document.getElementById('results').innerText = JSON.stringify(data);
+                //innerText = "<p>Hola mundo</p>"
+                //innerHTML = <p>"Hola mundo"</p>
+            }, 3000)
+        });
+        
+
+        //Promises
+        window.addEventListener('load',function(){
+            fetch('https://pokeapi.co/api/v2/pokemon')
+                .then(result=>{
+                    return result.json()
+                })
+                .then(data=>{
+                    setTimeout(()=>{
+                        document.getElementById('results').innerText = JSON.stringify(data);
+                    }, 3000)
+                });
+        })
+        
+    </script>
+</head>
+<body>
+
+    <p id="results">Cargando datos, por favor espere...</p>
+</body>
+</html>
