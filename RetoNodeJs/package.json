@@ -1,0 +1,18 @@
+{
+  "name": "reto-semana-uno",
+  "version": "1.0.0",
+  "description": "API sobre la inscripción de cualquier persona en un portal de oferta laboral",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Estefanía Garcés Pérez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
