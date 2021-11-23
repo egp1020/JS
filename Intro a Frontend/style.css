@@ -1,0 +1,38 @@
+body{
+    background-color: brown;
+    color: aliceblue;
+}
+
+input{
+    border: 5px double sienna;
+    text-align: center;
+    color: rgb(165, 42, 42);
+}
+
+#miDivision{
+    border: 4px solid sienna;
+    height: 100px;
+    width: 80%;
+    font-weight: 700;
+}
+
+#img-google{
+    width: 20%;
+    height: auto;
+    border: 5px solid darkslategray;
+}
+
+.fondo-blanco{
+    background-color: aliceblue;
+    color: brown;
+}
+
+.borde-dark{
+    border: 2px double darkslategray !important;
+    border-radius: 10;
+}
+
+input [type=button]:hover{
+    background-color: rgb(255, 0, 51);
+    cursor: pointer;
+}
