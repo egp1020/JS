@@ -32,7 +32,7 @@ input{
     border-radius: 10;
 }
 
-input [type=button]:hover{
-    background-color: rgb(255, 0, 51);
+input[type=button]:hover{
+    background-color: rgb(255, 211, 220);
     cursor: pointer;
 }
