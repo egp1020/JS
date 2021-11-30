@@ -55,7 +55,7 @@ def email():
         print(response.headers)
         return "Correo electrónico enviado."
     except Exception as e:
-        print(e.message)
+        print(e)
         return "Error enviando el mensaje."
 
 if __name__ =='__main__':

@@ -23,8 +23,8 @@
 })()
 
 function RegistrarPersona(){
-    let nombres = document.querySelector("#txtNombre").value;
-    let apellidos = document.querySelector("#txtApellido").value;
+    let nombres = document.querySelector("#txtNombres").value;
+    let apellidos = document.querySelector("#txtApellidos").value;
     let celular = document.querySelector("#txtCelular").value;
     let correo = document.querySelector("#txtCorreo").value;
 
